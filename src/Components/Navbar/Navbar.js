@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./images/logo.png";
 import "./Navbar.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -17,9 +17,9 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" aria-current="page" to="#">
@@ -32,9 +32,9 @@ function Navbar() {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="/disease/migraine">
                       Migraine
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
@@ -55,7 +55,7 @@ function Navbar() {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" href="/pathy/homeopathy">
                       Homeopathy
                     </a>
                   </li>
