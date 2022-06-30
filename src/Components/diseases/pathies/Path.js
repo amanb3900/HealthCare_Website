@@ -23,7 +23,9 @@ export const Path = (props) => {
               <img className="logo"  src={props.pic} alt="logo" />
           </div>
           {/* <div className='heading_path'> */}
-            <h2 className='heading_path'>{props.name} </h2>
+            <a  href='/pathy/homeopathy'>
+              <h2 className='heading_path'>{props.name} </h2>
+              </a>
           {/* </div> */}
           <p className='data_path'>{props.data}</p>
         </div>
