@@ -97,9 +97,11 @@ function Navbar() {
             <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <div className="animated-button">
+                  <Link to = "/forgot">
                   <button type="button" className="button">
                     Get Started
                   </button>
+                  </Link>
                   <div className="background"></div>
                 </div>
               </li>
