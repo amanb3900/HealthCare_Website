@@ -5,13 +5,13 @@
     box-sizing: border-box;
 } */
 
-.prabhav1 .prabhav .form{
+.prabhav .prabhav1 .form{
     padding-top: 20px ;
     width: 100%;
     
 }
 
-.prabhav1 .prabhav .button-socials{
+.prabhav .prabhav1 .button-socials{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@
     margin: 15px 0;
 }
 
-.prabhav1 .prabhav .or{
+.prabhav .prabhav1 .or{
     text-align : center;
     font-family: 'Inter';
     font-style: normal;
@@ -30,7 +30,7 @@
     color: #ACA7A7;
 }
 
-.prabhav1 .prabhav .form .fields input{
+.prabhav .prabhav1 .form .fields input{
     display: block;
     width: 75%;
     padding: 10px;
@@ -46,7 +46,7 @@
     background: transparent;
 }
 
-.prabhav1 .prabhav button {
+.prabhav .prabhav1 button {
     display: block;
     background: #3CBBF3;
     border-radius: 14px;
@@ -64,28 +64,28 @@
     color: #FFFFFF;
 }
 
-.prabhav1 .prabhav button:hover{
+.prabhav .prabhav1 button:hover{
     background: #1245EF;
 }
 
-.prabhav1 .prabhav .forgot-password{
+.prabhav .prabhav1 .forgot-password{
     text-align: center;
 }
 
 @media only screen and (max-width: 780px){
-    .prabhav1 .prabhav .form{ 
+    .prabhav .prabhav1 .form{ 
         padding: 15px 0;
     }
 
-    .prabhav1 .prabhav button{
+    .prabhav .prabhav1 button{
         margin: 40px auto;
     }
 
-    .prabhav1 .prabhav .button-socials{
+    .prabhav .prabhav1 .button-socials{
         padding-left: 0;
         justify-content: center;
     }
-    .prabhav1 .prabhav .or{
+    .prabhav .prabhav1 .or{
         font-size: 20px;
     }
 }
