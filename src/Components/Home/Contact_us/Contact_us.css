@@ -1,6 +1,6 @@
 .contact_us{
     display: flex;
-    width: 100vw;
+
     height: auto;
     min-height: 300px;
     background: linear-gradient(139.05deg, #E4F5F9 26.1%, rgba(205, 246, 255, 0.81) 73.86%, rgba(226, 250, 255, 0.71) 73.86%);

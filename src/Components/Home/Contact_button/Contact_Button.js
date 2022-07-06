@@ -1,7 +1,7 @@
 import React from 'react';
 import "./carousel.css";
 import img1 from './image16.png';
-function slider() {
+function Contact_button() {
 
 
       
@@ -36,4 +36,4 @@ function slider() {
       );
 }
   
-export default slider;
+export default Contact_button;

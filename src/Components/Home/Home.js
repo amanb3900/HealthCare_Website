@@ -3,7 +3,9 @@ import Experience from "./Experience/Experience";
 import Header from "./Header/Header";
 import Contact_us from "./Contact_us/Contact_us"
 import Footer from "../Footer/Footer";
-import Slider from "./Contact_button/slider";
+import Contact_Button from "./Contact_button/Contact_Button";
+import Think from "./Slider/Think";
+import Our_services from "./Our_services/Our_services";
 // import './home.css'
 
 
@@ -12,8 +14,11 @@ function Home() {
     <div className="home">
       <Header />
       <Experience />
-      <Slider/>
+      <Our_services />
+      <Contact_Button/>
+      <Think/>
       <Contact_us />
+
       <Footer />
     </div>
   );
