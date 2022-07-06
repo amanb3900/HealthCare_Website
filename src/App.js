@@ -8,7 +8,6 @@ import {
 import Forgot from "./Components/forgot/Forgot"
 import Login from "./Components/Log in/Login";
 import Home from "./Components/Home/Home";
-import Pathy from "./Components/Pathy/Pathy";
 import CaseOverview from "./Components/CaseOverview/CaseOverview";
 import Diseases from "./Components/diseases/diseases/Diseases";
 import Pathies from "./Components/pathies/Pathies";
@@ -30,8 +29,7 @@ export default function App() {
       </Switch>
       {/* <Diseases/> */}
       {/* <Home /> */}
-      {/* <Pathy />
-      <CaseOverview /> */}
+      {/* <CaseOverview /> */}
     </Router>
   );
 }
