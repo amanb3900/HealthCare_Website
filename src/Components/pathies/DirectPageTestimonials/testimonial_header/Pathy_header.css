@@ -1,4 +1,4 @@
-.header {
+#Aryan1.header {
     height: 99vh;
     width: 100%;
     background-color: #D1FAFF87;
@@ -8,22 +8,22 @@
     background-size: 58% 150%,20% 35%;
 }
 @media (max-width: 500px){
-    .header{
+    #Aryan1.header{
         background-position: left bottom, right top;
         background-size: 58% 80%,50% 50%;
     }
 }
-.pathy_header_intro {
+#Aryan1.pathy_header_intro {
     text-align: center;
     padding-bottom: 50px;
     height: fit-content;
 
 }
-.pathy_header_intro h1{
+#Aryan1.pathy_header_intro h1{
     /* margin-bottom: 25px; */
     margin-bottom: 45px;
 }
-.pathy_header_intro .box{
+#Aryan1.pathy_header_intro .box{
     display: flex;
     width: 90%;
     height: fit-content;
@@ -36,28 +36,28 @@
     margin-bottom: 50px;
 }
 
-.pathy_header_intro .box .left{
+#Aryan1.pathy_header_intro .box .left{
     width: 50%; 
     margin: auto;
     font-size: 1.1em;
 }
-.pathy_header_intro .box img{
+#Aryan1.pathy_header_intro .box img{
     width: 35%;
     height: auto;
     margin: auto;
 }
 
 @media (min-width: 768px) and (max-width: 991px){
-    .pathy_header_intro .box .left{
+    #Aryan1.pathy_header_intro .box .left{
         font-size: 1em;
     }
 }
 @media (max-width: 767px){
-    .pathy_header_intro .box .left{
+    #Aryan1.pathy_header_intro .box .left{
         width: 100%; 
         font-size: 1em;
     }
-    .pathy_header_intro .box img{
+    #Aryan1.pathy_header_intro .box img{
         display: none;
     }
 }
