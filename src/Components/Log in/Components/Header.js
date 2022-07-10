@@ -5,11 +5,11 @@ import logo from '../Images/logo.png';
 
 const Header = () =>{
     return (
-        <div className="container">
-            <div className="logo">
+        <div className="Prabhavcontainer">
+            <div className="Prabhavlogo">
                 <img src={logo} alt="" />
             </div>
-            <div className="title">Health Umbrella Foundation</div>
+            <div className="Prabhavtitle">Health Umbrella Foundation</div>
         </div>
     );
 };

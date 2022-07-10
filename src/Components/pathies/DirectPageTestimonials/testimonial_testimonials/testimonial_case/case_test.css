@@ -1,4 +1,4 @@
-#Aryan1.testimonialCard {
+.testimonialCard {
 
     background: linear-gradient(90deg, #E1E7EE 0%, #FFFFFF 100%, #FFFFFF 100%);
     background-color: #FFFFFF;
@@ -9,7 +9,7 @@
     width: 100%;
     margin-bottom: 8%;
 }
-#Aryan1.testimonialCardAlt{
+.testimonialCardAlt{
     background: linear-gradient(-90deg, #E1E7EE 0%, #FFFFFF 100%, #FFFFFF 100%);
     background-color: #FFFFFF;
 
@@ -22,19 +22,19 @@
     margin-bottom: 8%;
 }
 
-#Aryan1.caseDets {
+.caseDets {
     width: 50%;
     margin: 3.5%;
     top: 0%;
 }
 
-#Aryan1.testimonialIdentity {
+.testimonialIdentity {
     display: flex;
     margin: 4%;
 }
 
 
-#Aryan1.testimonialRect {
+.testimonialRect {
     height: 23.433530807495117px;
     width: 44.35995864868164px;
     border-radius: 0px;
@@ -44,7 +44,7 @@
 
 
 
-#Aryan1.testimonialPatientName {
+.testimonialPatientName {
 
     font-size: 38px;
     font-weight: 500;
@@ -55,7 +55,7 @@
 
 }
 
-#Aryan1.testimonialCase {
+.testimonialCase {
     font-size: 30px;
     font-weight: 500;
     line-height: 57px;
@@ -66,7 +66,7 @@
 
 }
 
-#Aryan1.patient_img {
+.patient_img {
     width: 89px;
     height: 90.16px;
     top: 30.92px;
@@ -75,18 +75,18 @@
 
 }
 
-#Aryan1.testimonialTimeline {
+.testimonialTimeline {
     display: flex;
     margin: 4%;
 }
 
-#Aryan1.testimonialIdImg {
+.testimonialIdImg {
     height: 35.735382080078125px;
     width: 45.945499420166016px;
 
 }
 
-#Aryan1.testimonialId {
+.testimonialId {
     margin: 1%;
     font-weight: 400;
     font-size: 19.75px;
@@ -95,17 +95,17 @@
     margin-left: 19px;
 }
 
-#Aryan1.testimonialTitle {
+.testimonialTitle {
     display: flex;
     margin: 4%;
 }
 
-#Aryan1.titleImg {
+.titleImg {
     height: 35.0501708984375px;
     width: 56.2125358581543px;
 }
 
-#Aryan1.titleText {
+.titleText {
     width: fit-content;
     margin: 1%;
     font-weight: 300;
@@ -115,7 +115,7 @@
     margin-left: 10px;
 }
 
-#Aryan1.testimonialPatientDets {
+.testimonialPatientDets {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -124,7 +124,7 @@
 
 }
 
-#Aryan1.testimonialCardFooter {
+.testimonialCardFooter {
     width: 98%;
     display: flex;
     justify-content: space-around;
@@ -134,17 +134,17 @@
 }
 
 
-#Aryan1.testimonialrating {
+.testimonialrating {
     margin: -3%;
     width: 155px;
     height: fit-content;
 }
 
-#Aryan1.patientImgDiv {
+.patientImgDiv {
     width: 50%;
 }
 
-#Aryan1.testimonialPatientImg {
+.testimonialPatientImg {
     width: 70%;
     height: 80%;
     margin: 8.5%;
@@ -160,64 +160,64 @@
     }
 }
 @media screen and (max-width: 764px) {
-    #Aryan1.testimonialPatientImg {
+    .testimonialPatientImg {
         width: 60%;
         height: 70%;
 
         margin-top: 19%
     }
-    #Aryan1.testimonialCard {
+    .testimonialCard {
         flex-direction: column-reverse;
     }
 
-    #Aryan1.testimonialCardAlt {
+    .testimonialCardAlt {
         flex-direction: column-reverse;
     }
-    #Aryan1.testimonialIdentity {
+    .testimonialIdentity {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 0%;
     }
-    #Aryan1.testimonialTimeline {
+    .testimonialTimeline {
         display: flex;
         margin-top: 1%;
     }
-    #Aryan1.testimonialTitle {
+    .testimonialTitle {
         display: flex;
         margin-top: 1%;
     }
-    #Aryan1.testimonialRect {
+    .testimonialRect {
         margin-top: 1%;
     }
-    #Aryan1.caseDets {
+    .caseDets {
         width: 90%;
         margin-top: 0%;
     }
 
-    #Aryan1.testimonialPatientName {
+    .testimonialPatientName {
         font-size: 28px;
         line-height: 50px;
     }
 
-    #Aryan1.testimonialPatientDets {
+    .testimonialPatientDets {
         font-size: 15px;
         line-height: 25px;
 
     }
 
-    #Aryan1.testimonialIdImg {
+    .testimonialIdImg {
         height: 30.735382080078125px;
         width: 40.945499420166016px;
     }
 
-    #Aryan1.testimonialId {
+    .testimonialId {
 
         font-size: 17.75px;
         line-height: 15.63px;
 
     }
-    #Aryan1.patientImgDiv {
+    .patientImgDiv {
         width: 90%;
         height: 50%;
 
@@ -230,29 +230,29 @@ justify-content: center;
 @media screen and (max-width: 584px) {
 
 
-    #Aryan1.testimonialPatientName {
+    .testimonialPatientName {
         font-size: 24px;
         line-height: 48px;
     }
 
-    #Aryan1.testimonialPatientDets {
+    .testimonialPatientDets {
         font-size: 15px;
         line-height: 25px;
 
     }
 
-   #Aryan1.testimonialIdImg {
+   .testimonialIdImg {
         height: 30.735382080078125px;
         width: 40.945499420166016px;
     }
 
-    #Aryan1.testimonialId {
+    .testimonialId {
 
         font-size: 17.75px;
         line-height: 15.63px;
 
     }
-    #Aryan1.patientImgDiv {
+    .patientImgDiv {
         width: 90%;
         height: 50%;
 

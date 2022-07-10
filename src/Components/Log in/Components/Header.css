@@ -5,22 +5,22 @@
     box-sizing: border-box;
 } */
 
-.prabhav .container{
+ .Prabhavcontainer{
     height: 10vh;
     display: flex;
     align-items: center;
     gap: 25px;
 }
 
-.prabhav .container .logo{
+ .Prabhavcontainer .Prabhavlogo{
     height: 100%;
 }
 
-.prabhav .container .logo img{
+ .Prabhavcontainer .Prabhavlogo img{
     height: 100%;
 }
 
-.prabhav .container .title{
+ .Prabhavcontainer .Prabhavtitle{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -30,40 +30,40 @@
 }
 
 @media only screen and (max-width: 1350px){
-    .prabhav .container .title{
+     .Prabhavcontainer .Prabhavtitle{
         font-size: 30px;
     }
 }
 
 @media only screen and (max-width: 1150px){
-    .prabhav .container .title{
+     .Prabhavcontainer .Prabhavtitle{
         font-size: 27px;
     }
 }
 
 @media only screen and (max-width: 1060px){
-    .prabhav .container .title{
+     .Prabhavcontainer .Prabhavtitle{
         font-size: 22px;
     }
 }
 
 @media only screen and (max-width: 900px){
-    .prabhav .container .title{
+     .Prabhavcontainer .Prabhavtitle{
         font-size: 18px;
     }
 }
 
 @media only screen and (max-width: 780px){
-    .prabhav .container .title{
+     .Prabhavcontainer .Prabhavtitle{
         font-size: 30px;
     }
-    .prabhav .container{
+     .Prabhavcontainer{
         justify-content: center;
     }
 }
 
 @media only screen and (max-width: 590px){
-    .prabhav .container .title{
+     .Prabhavcontainer .Prabhavtitle{
         font-size: 25px;
     }
 }

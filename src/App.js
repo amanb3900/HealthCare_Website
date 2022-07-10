@@ -19,7 +19,7 @@ export default function App() {
 
       <Switch>
       <Route path="/" element={<Home />}/>
-      <Route path="/forgot" element={<Forgot />}/>
+      <Route path="./login/ForgotPassword" element={<Forgot />}/>
       <Route path="/login" element={<Login />}/>
       <Route path="/pathy/homeopathy/" element={<Pathies />}/>
       <Route path="/disease/migraine/" element={<Diseases />}/>

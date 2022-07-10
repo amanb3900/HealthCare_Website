@@ -15,7 +15,7 @@ function case_test({ name, casen, details, alter }) {
     }
     return (
         <>
-
+            
             <div className={testimonialCaseClass}>
                 <div className='caseDets'>
                     <div className='testimonialIdentity'>
