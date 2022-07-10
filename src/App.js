@@ -15,6 +15,7 @@ import DirectPageTestimonials from './Components/pathies/DirectPageTestimonials/
 import YoutubePageTestimonials from "./Components/pathies/YoutubePageTestimonials/YoutubePageTestimonials";
 import { Donate } from "./Components/donateUs/Donate";
 import Clinic from "./Components/clinic/Clinic";
+import Feedback from "./Components/Feedback/FeedbackPage";
 export default function App() {
   return (
     <Router>
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/pathy/homeopathy/direct-testimonials/case1" element={<CaseOverview />}/>
         <Route path="/donation" element={<Donate />}/>
         <Route path="/clinics" element={<Clinic />}/>
+        <Route path="/feedback" element={<Feedback />}/>
       </Switch>
       {/* <Diseases/> */}
       {/* <Home /> */}

@@ -7,7 +7,8 @@ import searchIcon from "./images/image1.png";
 import healthcareIcon from "./images/image2.png";
 import healthguardIcon from "./images/image3.png";
 import syringeIcon from "./images/image4.png";
-import "./Experience.css"
+import "./Experience.css";
+import { Link } from "react-router-dom";
 
 function Experience() {
   return (
@@ -51,7 +52,7 @@ function Experience() {
           </a>
         </div>
         <div className="box box3">
-          <a href="#" style={{ textDecoration: "none", color: "black" }}>
+          <a href="/feedback" style={{ textDecoration: "none", color: "black" }}>
             <div className="container boxContent">
               <div className="boxContent-left" style={{ width: "85%" }}>
                 <h3>Feedback
