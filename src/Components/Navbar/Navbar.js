@@ -74,7 +74,7 @@ function Navbar() {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">
+                <a className="nav-link" aria-current="page" href="/clinics">
                   Clinics/Hospitals
                 </a>
               </li>
@@ -89,7 +89,7 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/donation">
                   Donation
                 </a>
               </li>
