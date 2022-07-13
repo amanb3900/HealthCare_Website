@@ -7,7 +7,7 @@ function FeedbackPage() {
     <div className="feedback-page">
       <div className="left">
         <h1>Feel free to drop us your feedback...</h1>
-        <div className="image">
+        <div className="imagE">
           <img src={image1} alt="img" />
         </div>
       </div>
