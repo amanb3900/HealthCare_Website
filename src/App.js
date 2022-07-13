@@ -15,6 +15,7 @@ import DirectPageTestimonials from './Components/pathies/DirectPageTestimonials/
 import YoutubePageTestimonials from "./Components/pathies/YoutubePageTestimonials/YoutubePageTestimonials";
 import { Donate } from "./Components/donateUs/Donate";
 import Clinic from "./Components/clinic/Clinic";
+import Start from "./Components/Get_Started/Start";
 import Feedback from "./Components/Feedback/FeedbackPage";
 export default function App() {
   return (
@@ -22,7 +23,7 @@ export default function App() {
 
       <Switch>
         <Route path="/" element={<Home />}/>
-        <Route path="./login/ForgotPassword" element={<Forgot />}/>
+        <Route path="/login/ForgotPassword" element={<Forgot />}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/pathy/homeopathy/" element={<Pathies />}/>
         <Route path="/disease/migraine/" element={<Diseases />}/>
@@ -32,6 +33,9 @@ export default function App() {
         <Route path="/donation" element={<Donate />}/>
         <Route path="/clinics" element={<Clinic />}/>
         <Route path="/feedback" element={<Feedback />}/>
+        <Route path="/start" element={<Start/>}/>
+        
+
       </Switch>
       {/* <Diseases/> */}
       {/* <Home /> */}

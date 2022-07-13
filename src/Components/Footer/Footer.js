@@ -27,7 +27,7 @@ function Footer() {
                             <li><a href='#'>Legal Notice</a></li>
                             <li><a href='#'>Policy of use of Personal data</a></li>
                             <li><a href='#'>Cookies Policy</a></li>
-                            <li><a href='#'>Sitemap</a></li>
+                            <li><a href='/start'>Sitemap</a></li>
                             <li><a href='#'>Credits</a></li>
                         </ul>
                     </div>

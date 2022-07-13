@@ -20,8 +20,8 @@ const Form = () => {
                     <input type="text" placeholder='password' />
                 </div>
                 <button>Sign In</button>
-                <Link to='./login/ForgotPassword'>
-                    <p className='forgot-password'> <a href="#">Forgot Password?</a> </p>
+                <Link to='/login/ForgotPassword'>
+                    <p className='forgot-password'> <a href="/login/ForgotPassword">Forgot Password?</a> </p>
                 </Link>
             </form>
         </div>
