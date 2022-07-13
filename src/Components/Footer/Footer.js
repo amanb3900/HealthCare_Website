@@ -16,7 +16,7 @@ function Footer() {
                         <ul className='unstyled-list'>
                             <li><a href='#'>Join US</a></li>
                             <li><a href='#'>Contact US</a></li>
-                            <li><a href='#'>FAQ</a></li>
+                            <li><a href='/faq'>FAQ</a></li>
                             <li><a href='#'>Presse</a></li>
                             <li><a href='#'>Partners</a></li>
                             <li><a href='#'>News</a></li>

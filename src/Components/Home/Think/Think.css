@@ -6,12 +6,15 @@
   }
   .aayush1 .item2{
     text-align: center;
+    height: 100%;
+    position: relative;
       
   }
   .aayush1 h3{
     font-size: 25px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
   }
   .aayush1 .think{
     display: grid;
@@ -19,6 +22,8 @@
     margin-left: 100px;
     margin-right: 100px;
     padding-top: 100px;
+    position: relative;
+  
   }
   .aayush1 .people{
     padding-top: 50px;

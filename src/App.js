@@ -5,7 +5,8 @@ import {
   Routes as Switch,
   Route
 } from "react-router-dom";
-import Forgot from "./Components/forgot/Forgot"
+import Faq from "./Components/faq/Faq";
+import Forgot from "./Components/forgot/Forgot";
 import Login from "./Components/Log in/Login";
 import Home from "./Components/Home/Home";
 import CaseOverview from "./Components/CaseOverview/CaseOverview";
@@ -34,7 +35,8 @@ export default function App() {
         <Route path="/clinics" element={<Clinic />}/>
         <Route path="/feedback" element={<Feedback />}/>
         <Route path="/start" element={<Start/>}/>
-        
+        <Route path="/faq" element={<Faq/>}/>
+            
 
       </Switch>
       {/* <Diseases/> */}
