@@ -58,7 +58,7 @@ function Think() {
                       </div>
                       <p>
                         It was an overall good experience,exploring this site. All of the data has been organized systematically, the idea of people sharing their experiences really intrigued me. Not only I was able to find the needed information, I
-                        felt confident after reading the experience of similar patients like myself!
+                        felt confident after reading the experience.
                       </p>
                     </div>
                   </div>
