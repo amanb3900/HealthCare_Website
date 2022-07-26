@@ -8,9 +8,10 @@
     margin-right: 70px;
 
     margin-bottom: 100px;
+    margin-top: 5%;
 }
 
-.Summary-Card{
+.Summary_Card{
     border-radius: 60px;
     display: flex;
     justify-content: center;

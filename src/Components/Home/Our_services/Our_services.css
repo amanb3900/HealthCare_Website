@@ -31,7 +31,7 @@
 }
 .our_services .section{
   background: #F5F9FC;
-  height: 500px;
+  height: fit-content;
   ;
 }
 

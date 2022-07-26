@@ -1,5 +1,5 @@
 .header {
-    height: 99vh;
+    height: fit-content;
     width: 100%;
     background-color: #D1FAFF87;
     background-image: url(./images/background_image_eclipse1.png), url(./images/background_image_eclipse2.png);
@@ -48,9 +48,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px){
-    .header {
-        height: 50vh;
-    }
+
     .aryan_pathy_header_intro .box .left{
         font-size: 1em;
     }

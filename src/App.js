@@ -18,6 +18,7 @@ import { Donate } from "./Components/donateUs/Donate";
 import Clinic from "./Components/clinic/Clinic";
 import Start from "./Components/Get_Started/Start";
 import Feedback from "./Components/Feedback/FeedbackPage";
+import ArticleBooks from "./Components/pathies/BooksArticles/BooksArticlesPageTestimonials"
 export default function App() {
   return (
     <Router>
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/disease/migraine/" element={<Diseases />}/>
         <Route path="/pathy/homeopathy/direct-testimonials" element={<DirectPageTestimonials />}/>
         <Route path="/pathy/homeopathy/youtube-testimonials" element={<YoutubePageTestimonials />}/>
+        <Route path="/pathy/homeopathy/ArticlesBooks" element={<ArticleBooks />}/>
         <Route path="/pathy/homeopathy/direct-testimonials/case1" element={<CaseOverview />}/>
         <Route path="/donation" element={<Donate />}/>
         <Route path="/clinics" element={<Clinic />}/>

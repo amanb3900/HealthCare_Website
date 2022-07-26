@@ -1,6 +1,6 @@
 import React from 'react'
 import './articlecardStyles.css'
-
+import { Link } from 'react-router-dom';
 export const ArticleCard = (props) => {
   return (
     <>
@@ -14,9 +14,9 @@ export const ArticleCard = (props) => {
           </div>
 
         </div>
-        <div className='art_tit'>
+        <Link className='art_tit' to='/pathy/homeopathy/ArticlesBooks'>
           <h4 className='art_tit_link'>Link to pdf or something</h4>
-        </div>
+        </Link>
       </div>
     </>
   )

@@ -1,17 +1,17 @@
 import React from 'react'
 import pic from './sumImg.png'
-import './summaryStyles.css'
+import styles from './summaryStyles.module.css'
 
 export const Summary = (props) => {
   return (
-    <div className='container_summary'>
-      <div className='Summary-Card'>
-        <div className='ImgDiv'>
-          <img src={pic} className='pic_summary' alt='background-pic' />
+    <div className={`${styles.container_summary}`}>
+      <div className={`${styles.Summary_Card}`}>
+        <div className={`${styles.ImgDiv}`}>
+          <img src={pic} className={`${styles.pic_summary}`} alt='background-pic' />
         </div>
-        <div className='text_summary'>
-          <h1 className='heading_summary text'>Summary</h1>
-          <p className='data_summary text'>{props.data} <br /> {props.data}</p>
+        <div className={`${styles.text_summary}`}>
+          <h1 className={`${styles.heading_summary} ${styles.text}`}>Summary</h1>
+          <p className={`${styles.data_summary} ${styles.text}`}>{props.data} <br /> {props.data}</p>
         </div>
       </div>
     </div>
