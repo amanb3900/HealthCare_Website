@@ -15,8 +15,8 @@ function Home() {
       <Header />
       <Experience />
       <Our_services />
-      <Contact_Button/>
       <Think/>
+      <Contact_Button/>
       <Contact_us />
       <Footer />
     </div>

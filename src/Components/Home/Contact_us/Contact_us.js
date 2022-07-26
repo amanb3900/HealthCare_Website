@@ -7,8 +7,8 @@ function Contact_us() {
   return (
     <div className='contact_us'>
         <div className="left">
-            <h1>Contact Us</h1>
-            <p>For any query reach out to us!!</p>
+            <h1>Reach Out To Us</h1>
+            {/* <p>For any query reach out to us!!</p> */}
             <div className="contactDetails">
                 <div className='item item1'>
                     <img src={image1} alt="img" /><h6>100-00-00-00</h6>
