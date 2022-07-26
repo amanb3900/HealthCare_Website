@@ -6,8 +6,10 @@ import face from './images/facebook.png'
 import linkedin from './images/linkedin.png'
 import insta from './images/instagram.png'
 
-import './infoStyles.css'
-import './infoResponsive.css'
+// import './infoStyles.css'
+// import './infoResponsive.css'
+import styles from "./Info.module.css"
+import './InfoExtra.css'
 
 export const Info = (props) => {
   const {onChangeInfo}=props
@@ -51,28 +53,28 @@ export const Info = (props) => {
       onChangeInfo(details.fn,details.ln,details.email,phone);
     }
     return (
-      <div className='donate-us-info'>
-        <div className='container-background'>
+      <div className={`${styles.donate_us_info}`}>
+        <div className={`${styles.container_background}`}>
 
-            <div className='input-div'>
-                <form className='form' onSubmit={handleSubmit}>
-                  <input required className='input fn' value={details.fn} type='text' onChange={(e)=>handleChange(e,'f')} placeholder='First Name'/>
-                  <input required className='input ln' value={details.ln}  type='text' onChange={(e)=>handleChange(e,'l')} placeholder='Last Name'/>
-                  <input required className='input email' value={details.email} type='email' onChange={(e)=>handleChange(e,'e')} placeholder='Email Address'/>
-                  <PhoneInput required className='input phone' value={phone} onChange={setPhone} placeholder='Phone Number' country={'in'}/>
-                  <div className='background-button'>
-                    <button className='submit button' type='submit'>Donate Now</button>
+            <div className={`${styles.input_div}`}>
+                <form className={`${styles.form}`} onSubmit={handleSubmit}>
+                  <input required className={`${styles.input} ${styles.fn}`} value={details.fn} type='text' onChange={(e)=>handleChange(e,'f')} placeholder='First Name'/>
+                  <input required className={`${styles.input} ${styles.ln}`} value={details.ln}  type='text' onChange={(e)=>handleChange(e,'l')} placeholder='Last Name'/>
+                  <input required className={`${styles.input} ${styles.email}`} value={details.email} type='email' onChange={(e)=>handleChange(e,'e')} placeholder='Email Address'/>
+                  <PhoneInput required className={`${styles.input} ${styles.phone}`} value={phone} onChange={setPhone} placeholder='Phone Number' country={'in'}/>
+                  <div className={`${styles.background_button}`}>
+                    <button className={`${styles.submit} ${styles.button}`} type='submit'>Donate Now</button>
                   </div>
                 </form>
             </div>
-            <div className='right-div'>
-                <img className='img' src={img} alt='img'/>
-                <div className='text-div'>Find us on social network</div>
-                <div className='logo-div'>
-                    <img className='logo facebook' src={face} alt='f'/>
-                    <img className='logo linkedin' src={linkedin} alt='l'/>
-                    <img className='logo instagram' src={insta} alt='i'/>
-                </div>
+            <div className={`${styles.right_div}`}>
+                <img className={`${styles.img}`} src={img} alt='img'/>
+                {/* <div className={`${styles.text_div}`}>Find us on social network</div>
+                <div className={`${styles.logo_div}`}>
+                    <img className={`${styles.logo} ${styles.facebook}`} src={face} alt='f'/>
+                    <img className={`${styles.logo} ${styles.linkedin}`} src={linkedin} alt='l'/>
+                    <img className={`${styles.logo} ${styles.instagram}`} src={insta} alt='i'/>
+                </div> */}
             </div>
 
         </div>

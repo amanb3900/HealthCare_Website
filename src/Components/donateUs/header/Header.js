@@ -1,26 +1,30 @@
 import React from 'react'
-import './backgroundStyles.css'
-import './headerStyles.css'
-import './headerResponsive.css'
+// import './backgroundStyles.css'
+// import './headerStyles.css'
+// import './headerResponsive.css'
+import styles from "./Header.module.css"
 import img from './images/homeImg.png'
 import Navbar from '../../Navbar/Navbar'
 
 
 export const Header = ({header,handleClick}) => {
   return (
-    <div className='donate-us-header'>
+    <div className={`${styles.donate_us_header}`}>
       <Navbar/>
-        <div className='ellipse container-background'>
+        <div className={`${styles.ellipse} ${styles.container_background}`}>
           
             
-            <div className='img-div'>
-                <img className='img' src={img} alt='img' />
+            <div className={`${styles.img_div}`}>
+                <img className={`${styles.img}`} src={img} alt='img' />
             </div>
 
-            <div className='text-div'>
-                <div className='title'>{header.title}</div>
-                <div className='subtitle'>{header.subtitle}</div>
-                <button className='donate-button' onClick={handleClick}>Donate Us</button>
+            <div className={`${styles.text_div}`}>
+                <div className={`${styles.title}`}>{header.title}</div>
+                <div className={`${styles.subtitle}`}>{header.subtitle}</div>
+                
+                <div className={`${styles.background_button}`}>
+                  <button className={`${styles.donate_button}`} onClick={handleClick}>Donate Us</button>
+                </div>
             </div>
 
         </div>

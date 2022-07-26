@@ -8,23 +8,25 @@ import React from 'react'
 import image1 from "./images/mainImg.png"
 import Navbar from '../../Navbar/Navbar'
 
+import styles from './Header.module.css'
+
 import "./Header.css"
 
 
 function Header({disease}) {
   return (
-    <div className='header'>
+    <div className={`${styles.header}`}>
         <Navbar />
-        <div className='header_intro'>
-            <div className="left">
+        <div className={`${styles.header_intro}`}>
+            <div className={`${styles.left}`}>
                 <h1>{disease} </h1>
-                <div className="animated-button">
-                    <button type="button" className="button" href='#about'>Read More</button>
-                    <div className="background"></div>
+                <div className={`${styles.animated_button}`}>
+                    <button type="button" className={`${styles.button}`} href='#about'>Read More</button>
+                    <div className={`${styles.background}`}></div>
                 </div>
             </div>
-            <div className="right">
-                <div className="background">
+            <div className={`${styles.right}`}>
+                <div className={`${styles.background}`}>
                     <img src={image1} alt="image1" />
                 </div>
 

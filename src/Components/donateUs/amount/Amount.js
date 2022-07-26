@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
-import './backgroundStyles.css'
-import './amountStyles.css'
-import './amountResponsive.css'
-
+// import './backgroundStyles.css'
+// import './amountStyles.css'
+// import './amountResponsive.css'
+import styles from "./Amount.module.css"
 
 export const Amount = (props) => {
     const {onChangeAmount}=props
@@ -11,20 +11,21 @@ export const Amount = (props) => {
         onChangeAmount(value);
         setValue(value)
     }
+    //{`${styles.feedback_page}`}
   return (
-    <div className='donate-us-amount'>
-        <div className='ellipse container-background'>
+    <div className={`${styles.donate_us_amount}`}>
+        <div className={`${styles.ellipse} ${styles.container_background}`}>
             
-            <div className='select-amount'>Select an Amount (in Rs)</div>
-            <div className='buttons'>
-                <button className='button b5' onClick={()=>handleChangeValue(5)} >5</button>
-                <button className='button b25' onClick={()=>handleChangeValue(25)}>25</button>
-                <button className='button b100' onClick={()=>handleChangeValue(100)}>100</button>
-                <button className='button b250' onClick={()=>handleChangeValue(250)}>250</button>
-                <button className='button b500' onClick={()=>handleChangeValue(500)}>500</button>
+            <div className={`${styles.select_amount}`}>Select an Amount (in Rs)</div>
+            <div className={`${styles.buttons}`}>
+                <button className={`${styles.button}`} onClick={()=>handleChangeValue(5)} >5</button>
+                <button className={`${styles.button}`} onClick={()=>handleChangeValue(25)}>25</button>
+                <button className={`${styles.button}`} onClick={()=>handleChangeValue(100)}>100</button>
+                <button className={`${styles.button}`} onClick={()=>handleChangeValue(250)}>250</button>
+                <button className={`${styles.button}`} onClick={()=>handleChangeValue(500)}>500</button>
             </div>
-            <div className='input-text'>Other (in Rs)</div>
-            <input className='input' type="number"  value={value} onChange={(e)=>handleChangeValue(e.target.value)} valuedefault={0}/>
+            <div className={`${styles.input_text}`}>Other (in Rs)</div>
+            <input className={`${styles.input}`} type="number"  value={value} onChange={(e)=>handleChangeValue(e.target.value)} valuedefault={0}/>
 
         </div>
     </div>
