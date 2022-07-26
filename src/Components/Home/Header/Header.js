@@ -28,19 +28,19 @@ function Header() {
                 </div>
                 <div className="box box1">
                     <img src={image2} alt="image2" />
-                    <p>Patients<br/>52</p>
+                    <p className='floatCardText'>Patients<br/>52</p>
                 </div>
                 <div className="box box2">
                     <img src={image3} alt="image3" />
-                    <p>Articles Published</p>
+                    <p className='floatCardText'>Articles Published</p>
                 </div>
                 <div className="box box3">
                     <img src={image4} alt="image4" />
-                    <p>Visits<br/>1234</p>
+                    <p className='floatCardText'>Visits<br/>1234</p>
                 </div>
                 <div className="box box4">
                     <img src={image5} alt="image5" />
-                    <p>15</p>
+                    <p className='floatCardText'>15</p>
                 </div>
             </div>
         </div>
