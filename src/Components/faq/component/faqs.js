@@ -9,7 +9,11 @@ import { FiPlus, FiMinus } from 'react-icons/fi';
 
 
 const Faqs = () => {
+
+  const placeholder = 'Search For a Question'
+  const [wordEntered, setWordEntered] = useState([]);
   const [clicked, setClicked] = useState(false);
+  const [filteredData, setfilteredData] = useState([]);
 
   const toggle = index => {
     if (clicked === index) {
@@ -20,7 +24,25 @@ const Faqs = () => {
     setClicked(index);
   };
 
+  const handleFilter = (event) => {
+    const searchWord = event.target.value
+    setWordEntered(searchWord)
+    const newFilter = Data.filter((value) => {
+      return value.question.toLowerCase().includes(searchWord.toLowerCase());
+    })
 
+    if (searchWord === "") {
+      setfilteredData([]);
+    }
+    else {
+      setfilteredData(newFilter);
+    }
+  }
+
+  const clrinput = () => {
+    setWordEntered('')
+    setfilteredData([])
+  }
 
 
   return (
@@ -42,7 +64,19 @@ const Faqs = () => {
           <p>we are here to help </p>
 
           <div><MDBCol md="6">
-            <input className="Searchii" type="text" placeholder="Search for a question" aria-label="Searchii" />
+            <input className="Searchii" type="text" placeholder={placeholder} value={wordEntered} aria-label="Searchii" onChange={handleFilter} />
+
+            {filteredData.length !== 0 && (
+              <div className="dataResult">
+                {filteredData.slice(0, 15).map((value, index) => {
+                  return (
+                    <a className="dataItem" onClick={clrinput} href={`#${value.id}`} >
+                      <p>{value.question} </p>
+                    </a>
+                  );
+                })}
+              </div>
+            )}
           </MDBCol></div>
 
 
@@ -56,7 +90,7 @@ const Faqs = () => {
           <img className="Faqimage" src={imgfaq} alt="" />
         </div>
       </div>
-      
+
       <div className="AccordionSectionii">
 
 
@@ -64,18 +98,19 @@ const Faqs = () => {
           {Data.map((item, index) => {
             return (
               <>
-                <div className="Wrapii" onClick={() => toggle(index)} key={index}>
-                  <h1>{item.question}</h1>
-                
+                <div id={index} className="Wrapii" onClick={() => toggle(index)} key={index}>
+                  <h1>{item.question} </h1>
+
 
                   <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
                 </div>
                 {clicked === index ? (
                   <div className="Dropdownii">
-                    <p>{item.answer}</p>
+                    <p className='faq_answerBox'>{item.answer}</p>
                   </div>
 
                 ) : null}
+                <hr className='faqHr' />
               </>
             );
           })}
