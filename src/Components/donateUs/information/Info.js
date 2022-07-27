@@ -62,8 +62,9 @@ export const Info = (props) => {
                   <input required className={`${styles.input} ${styles.ln}`} value={details.ln}  type='text' onChange={(e)=>handleChange(e,'l')} placeholder='Last Name'/>
                   <input required className={`${styles.input} ${styles.email}`} value={details.email} type='email' onChange={(e)=>handleChange(e,'e')} placeholder='Email Address'/>
                   <PhoneInput required className={`${styles.input} ${styles.phone}`} value={phone} onChange={setPhone} placeholder='Phone Number' country={'in'}/>
-                  <div className={`${styles.background_button}`}>
-                    <button className={`${styles.submit} ${styles.button}`} type='submit'>Donate Now</button>
+                  <div className={`${styles.animated_button}`}>
+                    <button type="submit" className={`${styles.button}`}>Donate Now</button>
+                    <div className={`${styles.background_button}`}></div>
                   </div>
                 </form>
             </div>

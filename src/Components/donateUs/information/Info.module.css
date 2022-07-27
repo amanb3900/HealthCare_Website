@@ -105,39 +105,35 @@
 }
 
 
-.donate_us_info .button{
-    width: fit-content;
+.animated_button{
+    margin-top: 30px;
+    width: 180px;
     height: 48px;
-
+    border-radius: 10px;
+}
+.button{
+    width: 180px;
+    height: 48px;
     border-radius: 10px;
     border-style: none;
-    
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 46px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #7C7272;
-    padding: 10px;
-    
-    z-index: 2;
     background-color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-family:'Poppins';
+    color: #1fbde8;
+    position: absolute;
+    z-index: 2;
 }
-.donate_us_info .background_button{
-    margin-top: 30px;
-
-    border: 2px solid #049ac3;
-    background-color: #049ac3;
+.animated_button .background_button{
+    width: 180px;
+    height: 48px;
+    background-color: #38AECF;
     border-radius: 10px;
+    position:absolute;
+    transition: transform .1s ease-in-out;
     z-index: 1;
-    transition: transform .5s ease-in-out;
 }
-.donate_us_info .button:hover {
-    transform: rotate(5deg) scale(1.02) translate(3px, 0px);
+.animated_button:hover .background_button{
+    transform: rotate(-3deg) scale(1.02) translate(3px, 0px);
 }
 
 /*--------------------------------------------------------------------------------------------*/
@@ -148,7 +144,7 @@
     .donate_us_info .input_div .form{
         width: 100%;
         gap: 30px;
-    
+        justify-content: center;
     }
     .donate_us_info .input{
         width: 70%;
@@ -163,13 +159,7 @@
     .donate_us_info .text_div{
         margin: 10px;
     }
-    .donate_us_info .button{
-        height: 40px;
-        font-size: 20px;
-
-        padding: 5px;
-        
-    }
+    
 }
 
 @media  screen and (max-width: 1000px){
@@ -183,13 +173,6 @@
     .donate_us_info .form{
         width: 70%;
         font-size: 15px;
-    }
-    .donate_us_info .button{
-        height: 35px;
-        font-size:18px;
-
-        padding: 5px;
-        
     }
 }
 

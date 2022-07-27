@@ -26,9 +26,9 @@
 }
 
 .pic_summary{
-    max-width: 687px;
-    max-height: 363px;
-    height: 400%;
+    max-width: 887px;
+    max-height: 463px;
+    height: 100%;
 
     margin-left: 28px;
     margin-right: 28px;
@@ -87,7 +87,7 @@
 @media  screen and (max-width: 1421px) {
 
     .pic_summary{
-      height: 300%;
+      height: 90%;
     }
     
     .container_summary{
@@ -98,8 +98,7 @@
   @media screen and (max-width:1275px){
         
         .pic_summary{
-            width: 587px;
-            height: 223px;
+            width: 100%
         }
       .text_summary{
           margin-left: -100px;

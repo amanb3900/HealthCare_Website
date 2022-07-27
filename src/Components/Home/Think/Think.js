@@ -37,7 +37,7 @@ function Think() {
             <div className="item2">
               <Part {...settings}>
                 <div className="box">
-                  <div class="card">
+                  <div className="card">
                     <div className="card-body">
                       <div>
                         <img className="image" src={img1} alt="" />
