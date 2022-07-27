@@ -41,7 +41,6 @@
     margin-top: 100px;
 
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
 
     margin: 20px;
@@ -49,7 +48,7 @@
 
 .pic_right{
     width: 20%;
-    margin-left: -50px;
+    margin-left: 5px;
     bottom: 0;
     max-width: 480px;
     max-height: 317px;
