@@ -7,17 +7,17 @@ import searchIcon from "./images/image1.png";
 import healthcareIcon from "./images/image2.png";
 import healthguardIcon from "./images/image3.png";
 import syringeIcon from "./images/image4.png";
-import "./Experience.css";
+import styles from "./Experience.module.css";
 import { Link } from "react-router-dom";
 
 function Experience() {
   return (
-    <div className="experience-section">
-      <div className="part1">
-        <div className="box box1">
+    <div className={`${styles.experience_section}`}>
+      <div className={`${styles.part1}`}>
+        <div className={`${styles.box} ${styles.box1}`}>
           <a href="#" style={{ textDecoration: "none", color: "black" }}>
-            <div className="container boxContent">
-              <div className="boxContent-left" style={{ width: "85%" }}>
+            <div className={`${styles.container} ${styles.boxContent}`}>
+              <div className={`${styles.boxContent_left}`} style={{ width: "85%" }}>
                 <h3>Share Experience
                 <span>
                     <img src={shareIcon} alt="rightArrow" />
@@ -25,17 +25,17 @@ function Experience() {
                 </h3>
                 <p>Your experience/testimonials might be the cure for others.</p>
               </div>
-              <div className="boxContent-right" style={{ width: "15%" }}>
+              <div className={`${styles.boxContent_right}`} style={{ width: "15%" }}>
                 <img src={rightArrow} alt="" />
               </div>
             </div>
-            <div className="background"></div>
+            <div className={`${styles.background}`}></div>
           </a>
         </div>
-        <div className="box box2">
+        <div className={`${styles.box} ${styles.box2}`}>
           <a href="#" style={{ textDecoration: "none", color: "black" }}>
-            <div className="container boxContent">
-              <div className="boxContent-left" style={{ width: "85%" }}>
+            <div className={`${styles.container} ${styles.boxContent}`}>
+              <div className={`${styles.boxContent_left}`} style={{ width: "85%" }}>
                 <h3>
                   Ask Us
                   <span>
@@ -44,17 +44,17 @@ function Experience() {
                 </h3>
                 <p>Share your symptoms, we will suggest you the best possible cure available.</p>
               </div>
-              <div className="boxContent-right" style={{ width: "15%" }}>
+              <div className={`${styles.boxContent_right}`} style={{ width: "15%" }}>
                 <img src={rightArrow} alt="" />
               </div>
             </div>
-            <div className="background"></div>
+            <div className={`${styles.background}`}></div>
           </a>
         </div>
-        <div className="box box3">
+        <div className={`${styles.box} ${styles.box3}`}>
           <a href="/feedback" style={{ textDecoration: "none", color: "black" }}>
-            <div className="container boxContent">
-              <div className="boxContent-left" style={{ width: "85%" }}>
+            <div className={`${styles.container} ${styles.boxContent}`}>
+              <div className={`${styles.boxContent_left}`} style={{ width: "85%" }}>
                 <h3>Feedback
                   <span>
                     <img src={feedbackIcon} alt="rightArrow" />
@@ -62,19 +62,19 @@ function Experience() {
                 </h3>
                 <p>Your feedback will help us serve better for humanity.</p>
               </div>
-              <div className="boxContent-right" style={{ width: "15%" }}>
+              <div className={`${styles.boxContent_right}`} style={{ width: "15%" }}>
                 <img src={rightArrow} alt="rightArrow" />
               </div>
             </div>
-            <div className="background"></div>
+            <div className={`${styles.background}`}></div>
           </a>
         </div>
       </div>
 
-      <div className="part2 container">
-        <div className="left">
-          <div className="col1">
-            <div className="box box1">
+      <div className={`${styles.part2} ${styles.container}`}>
+        <div className={`${styles.left}`}>
+          <div className={`${styles.col1}`}>
+            <div className={`${styles.box} ${styles.box1}`}>
               <img src={searchIcon} alt="img" />
               <h3>Our Mission</h3>
               <ul>
@@ -89,7 +89,7 @@ function Experience() {
                 </li>
                 </ul>
             </div>
-            <div className="box box2">
+            <div className={`${styles.box} ${styles.box2}`}>
               <img src={healthguardIcon} alt="img" />
               <h3>Problems We Solve</h3>
               <ul>
@@ -105,21 +105,21 @@ function Experience() {
               </ul>
             </div>
           </div>
-          <div className="col2">
-            <div className="box box1">
+          <div className={`${styles.col2}`}>
+            <div className={`${styles.box} ${styles.box1}`}>
               <img src={healthcareIcon} alt="img" />
               <h3>Our Vision</h3>
               <p>To inspire hope, and contribute to health and well-being by providing the best alternative treatment to every patient.</p>
             </div>
-            <div className="box box2">
+            <div className={`${styles.box} ${styles.box2}`}>
               <img src={syringeIcon} alt="img" />
               <h3>Our Motive</h3>
               <p>We want to help you own your well-being.</p>
             </div>
           </div>
         </div>
-        <div className="right">
-          <div className="col3">
+        <div className={`${styles.right}`}>
+          <div className={`${styles.col3}`}>
             <h2>What we do ?</h2>
             <p>
             Internet contains huge amount of data in the form of testimonials of patients in the form of ebooks, website, youtube videos, articles which are scattered, unverified and unorganized.<br/><br/>

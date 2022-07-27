@@ -46,9 +46,9 @@ function FeedbackPage() {
             Kindly fill up this form and help us improve!
           </p>
           <div className={`${styles.form}`}>
-            <input onChange={(e)=>{setname(e.target.value)}} type="text" className={`${styles.input, styles.name}`} placeholder="Enter Your Name" aria-label="Your name" />
-            <input onChange={(e)=>{setemail(e.target.value)}} type="text" className={`${styles.input, styles.email}`} placeholder="Enter Your Email" aria-label="Your name" />
-            <textarea onChange={(e)=>{setmessage(e.target.value)}} type="text" className={`${styles.input, styles.message}`} placeholder="Message" aria-label="Your name" />
+            <input onChange={(e)=>{setname(e.target.value)}} type="text" className={`${styles.input} ${styles.name}`} placeholder="Enter Your Name" aria-label="Your name" />
+            <input onChange={(e)=>{setemail(e.target.value)}} type="text" className={`${styles.input} ${styles.email}`} placeholder="Enter Your Email" aria-label="Your name" />
+            <textarea onChange={(e)=>{setmessage(e.target.value)}} type="text" className={`${styles.input} ${styles.message}`} placeholder="Message" aria-label="Your name" />
             <div className={`${styles.bottom}`}>
               <div className={`${styles.bottom_msg}`}>We appreciate your feedback and assure you of our best services always.</div>
               <div className={`${styles.animated_button}`}>

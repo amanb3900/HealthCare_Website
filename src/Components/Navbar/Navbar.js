@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-custom">
         <div className="container-fluid">
           <a className="navbar-logo" href="#">
             <img src={logo} alt="logo" />

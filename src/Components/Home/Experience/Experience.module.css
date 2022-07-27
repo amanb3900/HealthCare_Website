@@ -1,14 +1,14 @@
-.experience-section{    
+.experience_section{    
     background-color: #F5F9FC;
     justify-content: center;
 }
-.experience-section .part1{
+.experience_section .part1{
     display:flex;
     align-items: center;
     justify-content: center;
     padding: 50px 5% 25px;
 }
-.experience-section .part1 .box{
+.experience_section .part1 .box{
     height: 180px;
     width: 30.33%;
     margin-left: 1.5%;
@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
 }
-.experience-section .part1 .boxContent{
+.experience_section .part1 .boxContent{
     height: 180px;
     width: 27%;
     border-radius: 18px;
@@ -31,7 +31,7 @@
     transition: transform .1s ease-in-out;
     z-index: 2;
 }
-.experience-section .part1 .box .background{
+.experience_section .part1 .box .background{
     height: 180px;
     width: 26vw;
     border-radius: 20px;
@@ -39,32 +39,32 @@
     transition: transform .2s ease-in-out;
     z-index: 1;
 }
-.experience-section .part1 .box:hover .background{
+.experience_section .part1 .box:hover .background{
     transform: rotate(-2.5deg) scale(1.05) translate(8px, 0px);
 }
-.experience-section .part1 .box:hover .boxContent{
+.experience_section .part1 .box:hover .boxContent{
     transform:scale(1.01);
 }
-.experience-section .part1 .box1 .boxContent-right img, .experience-section .part1 .box2 .boxContent-right img, .experience-section .part1 .box3 .boxContent-right img{
+.experience_section .part1 .box1 .boxContent_right img, .experience_section .part1 .box2 .boxContent_right img, .experience_section .part1 .box3 .boxContent_right img{
     margin-left: 10px;
     width: 35px;
     height: auto;
 }
-.experience-section .part1 .box1 .boxContent-left img{
+.experience_section .part1 .box1 .boxContent_left img{
     width: 35px;
     height: auto;
     margin-left: 16px;
     position: relative;
     top: -6px;
 }
-.experience-section .part1 .box2 .boxContent-left img{
+.experience_section .part1 .box2 .boxContent_left img{
     width: 40px;
     height: auto;
     margin-left: 16px;
     position: relative;
     top: -10px;
 }
-.experience-section .part1 .box3 .boxContent-left img{
+.experience_section .part1 .box3 .boxContent_left img{
     width: 40px;
     height: auto;
     margin-left: 16px;
@@ -72,7 +72,7 @@
     top: -10px;
 }
 
-.experience-section .part2{
+.experience_section .part2{
     height: auto;
     min-height: 770px;
     width: 90%;
@@ -83,22 +83,22 @@
     display: flex;
     flex-direction: row;
 }
-.experience-section .part2 .left{
+.experience_section .part2 .left{
     width:60%;
     display: flex;
 }
-.experience-section .part2 .right{
+.experience_section .part2 .right{
     width:40%;
     margin: auto;
 }
-.experience-section .part2 .left .col1{
+.experience_section .part2 .left .col1{
     width: 50%;
 }
-.experience-section .part2 .left .col2{
+.experience_section .part2 .left .col2{
     width: 50%;
     padding-top: 70px;
 }
-.experience-section .part2 .left .box{
+.experience_section .part2 .left .box{
     width: 88%;
     border-radius: 20px;
     padding: 10px 25px;
@@ -108,81 +108,115 @@
     text-align: center;
     justify-content: center;
 }
-.experience-section .part2 .left .box ul{
+.experience_section .part2 .left .box ul{
     text-align: left;
 }
 
-.experience-section .part2 .right .col3{
+.experience_section .part2 .right .col3{
     padding-left: 20px;
     text-align: left;
 }
-.experience-section .part2 img {
+.experience_section .part2 img {
     width: 50px;
     height:auto;
     margin-bottom: 10px;
 }
 @media (min-width: 768px) and (max-width: 1200px) {
-    .experience-section .part1 .boxContent h3{
+    .experience_section .part1 .boxContent h3{
         font-size: 1.5em;
     }
-    .experience-section .part1 .boxContent p{
+    .experience_section .part1 .boxContent p{
         font-size: 0.9em;
     }
-    .experience-section .part2{
+    .experience_section .part2{
         font-size: 0.8em;
     }
 }
-@media (min-width:100px) and (max-width: 767px){
-    .experience-section .part1 .boxContent h3{
+@media (min-width:650px) and (max-width: 950px){
+    .experience_section .part1 .boxContent h3{
         font-size: 1.2em;
     }
-    .experience-section .part1 .boxContent p{
+    .experience_section .part1 .boxContent p{
         font-size: 0.8em;
     }
-    .experience-section .part1{
+    .experience_section .part1{
         display:block;
         align-items: center;
         justify-content: center;
         padding: 50px 5% 25px;
     }
-    .experience-section .part1 .box{
+    .experience_section .part1 .box{
+        height: 150px;
+        width: 500px;
+        margin: 30px auto auto auto;
+    }
+    .experience_section .part1 .boxContent{
+        height: 150px;
+        width: 500px;
+    }
+    .experience_section .part1 .box .background{
+        height: 150px;
+        width: 500px;
+    }
+    .experience_section .part1 .box:hover .background{
+        transform: rotate(-2.5deg) scale(1.02) translate(8px, 0px);
+    }
+    .experience_section .part1 .box:hover .boxContent{
+        transform:scale(1.01);
+    }
+}
+@media (min-width:100px) and (max-width: 650px){
+    .experience_section .part1 .boxContent h3{
+        font-size: 1.2em;
+    }
+    .experience_section .part1 .boxContent p{
+        font-size: 0.8em;
+    }
+    .experience_section .part1{
+        display:block;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 5% 25px;
+    }
+    .experience_section .part1 .box{
         height: 150px;
         width: 300px;
         margin: 30px auto auto auto;
     }
-    .experience-section .part1 .boxContent{
+    .experience_section .part1 .boxContent{
         height: 150px;
         width: 300px;
     }
-    .experience-section .part1 .box .background{
+    .experience_section .part1 .box .background{
         height: 150px;
         width: 300px;
     }
-    .experience-section .part1 .box:hover .background{
+    .experience_section .part1 .box:hover .background{
         transform: rotate(-2.5deg) scale(1.02) translate(8px, 0px);
     }
-    .experience-section .part1 .box:hover .boxContent{
+    .experience_section .part1 .box:hover .boxContent{
         transform:scale(1.01);
     }
-
-    .experience-section .part2{
+}
+@media (min-width:100px) and (max-width: 767px){
+    .experience_section .part2{
         font-size: 0.7em;
     }
-    .experience-section .part2{
+    .experience_section .part2{
         margin: 50px auto 0px;
         padding: 5% 5% 2%;
         display: block;
     }
-    .experience-section .part2 .left .box{
+    .experience_section .part2 .left .box{
         padding: 10px 10px;
     }
-    .experience-section .part2 .left{
+    .experience_section .part2 .left{
         width: auto;
     }
-    .experience-section .part2 .right{
+    .experience_section .part2 .right{
         width: auto;
     }
-    .experience-section .part2 img {
+    .experience_section .part2 img {
         width: 25px;
     }
 }
