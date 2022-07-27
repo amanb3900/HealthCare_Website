@@ -128,7 +128,13 @@
 .Wrapii span {
     margin-right: 1.5rem;
 }
-
+.dataItem:hover
+{
+    background-color: lightgray;
+}
+.dataItemm:hover{
+    color: #000000;
+}
 .Dropdownii {
     position: relative;
     color: black;
@@ -156,7 +162,6 @@
 }
 .dataResult{
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-    margin-top: 5px;
     width: 300px;
     height: 200px;
     background-color: aliceblue;
@@ -172,8 +177,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-@media (manx-width: 600px){
-    /* .Faqsection{
+/* @media (manx-width: 600px){
+    .Faqsection{
         
-    } */
-}
+    }
+} */

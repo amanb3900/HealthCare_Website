@@ -70,9 +70,12 @@ const Faqs = () => {
               <div className="dataResult">
                 {filteredData.slice(0, 15).map((value, index) => {
                   return (
-                    <a className="dataItem" onClick={clrinput} href={`#${value.id}`} >
+                    <div className="dataItem"> 
+
+                    <a className="dataItemm" onClick={clrinput} href={`#${value.id}`} >
                       <p>{value.question} </p>
                     </a>
+                    </div>
                   );
                 })}
               </div>
