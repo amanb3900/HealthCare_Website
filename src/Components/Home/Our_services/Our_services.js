@@ -1,7 +1,7 @@
 import React from "react";
-import "slick-carousel/slick/slick.css";
-import "./Our_services.css";
+import styles from "./Our_services.module.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
 import img1 from "./image 13.png";
 import img2 from "./image 15.png";
@@ -24,27 +24,38 @@ function Our_services() {
       return <ul style={{ margin: " -25px" }}>{dots}</ul>;
     },
   };
-
+  const data = [{ img: img4, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ullam! Iste quidem soluta error velit. Voluptate, nemo' },
+  { img: img1, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ullam! Iste quidem soluta error velit. Voluptate, nemo' },
+  { img: img2, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ullam! Iste quidem soluta error velit. Voluptate, nemo' },
+  { img:  img3, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ullam! Iste quidem soluta error velit. Voluptate, nemo' },
+  { img:  img4, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ullam! Iste quidem soluta error velit. Voluptate, nemo' },
+  { img: img1, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ullam! Iste quidem soluta error velit. Voluptate, nemo' },
+  { img: img2, details: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ullam! Iste quidem soluta error velit. Voluptate, nemo' }]
   return (
-    <div className="our_services">
-      <div className="section">
-        <div className="textt">
+    <div className={`${styles.our_services}`}>
+      <div className={`${styles.section}`}>
+        <div className={`${styles.textt}`}>
           <h2>Our Services</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ullam! Iste quidem soluta error velit. Voluptate, nemo</p>
         </div>
-        <div className="slide">
+        <div className={`${styles.slide}`}>
           <Slider {...settings}>
-            <div className="box">
-              <div className="card">
-                <div className="card-body">
-                  <div>
-                    <img className="image" src={img1} alt="" />
+              {data.map((Data) => {
+                return(
+                  <div className={`${styles.box}`}>
+                  <div className={`${styles.card}`}>
+                    <div className={`${styles.cardbody}`}>
+                      <div className={`${styles.OurServicesServiceImgWrap}`}>
+                        <img className={`${styles.ServiceImage}`} key={Data.id} src={Data.img} alt="" />
+                      </div>
+                      <p className={`${styles.ServicesText}`}>{Data.details}</p>
+                    </div>
                   </div>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ullam! Iste quidem soluta error velit. Voluptate, nemo.</p>
-                </div>
-              </div>
-            </div>
-            <div className="box">
+                </div>)
+              }
+              )}
+            </Slider>
+            {/* <div className="box">
               <div className="card">
                 <div className="card-body">
                   <div className="centimg">
@@ -94,8 +105,7 @@ function Our_services() {
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ullam! Iste quidem soluta error velit. Voluptate, nemo</p>
                 </div>
               </div>
-            </div>
-          </Slider>
+            </div> */}
         </div>
       </div>
     </div>

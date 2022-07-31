@@ -2,7 +2,7 @@ import React from 'react'
 import './videoCard.css'
 import rating from './rating.png'
 import Stars from '../stars/stars'
-function videoCard({ logo,title, details }) {
+function videoCard({ logo,title, details,link }) {
     console.log({details})
     return (
         <>
@@ -16,7 +16,7 @@ function videoCard({ logo,title, details }) {
                 </div>
                 <div className='card_footer'>
                     <Stars/>
-                    <button className='Redirect_Btn'>Read More</button>
+                    <a href={link} target='./blank'><button className='Redirect_Btn'>Go to video</button></a>
                 </div>
             </div>
         </>

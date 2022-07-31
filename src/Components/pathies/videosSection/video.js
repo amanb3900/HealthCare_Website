@@ -29,8 +29,8 @@ function video() {
             
           ]
     };
-    const obj1 = { logo: Thumbnail1,title: 'Secrets of Ayurveda With Dr. Vasant Lad & Sadhguru' ,details: 'Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec. Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec...' };
-    const obj2 = { logo: Thumbnail,title: 'Ayurveda Over Western Medicines | Dr. B.M HEGDE | TEDxMITE' ,details: 'Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec. Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec...' };
+    const obj1 = { logo: Thumbnail,title: 'Secrets of Ayurveda With Dr. Vasant Lad & Sadhguru' ,details: 'Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec. Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec...',link:'https://www.youtube.com/watch?v=Z2icN6wFjus'} ;
+    const obj2 = { logo: Thumbnail1,title: 'Ayurveda Over Western Medicines | Dr. B.M HEGDE | TEDxMITE' ,details: 'Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec. Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec...',link:'https://www.youtube.com/watch?v=HzTvEK1sVi0'} ;
     // const obj3 = { name: 'Shah Rukh', casen: '3', details: 'Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec. Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec. Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec...' };
     // const obj4 = { name: 'Sam Young', casen: '4', details: 'Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec. Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec. Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec...' };
     // const obj5 = { name: 'Iris Yang', casen: '5', details: 'Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec. Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec. Proin tincidunt auctor nisl, vel vehicula tellus condimentum nec...' };

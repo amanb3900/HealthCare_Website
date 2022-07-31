@@ -3,7 +3,7 @@ import './articlecard.css'
 import Reddit from './Reddit.png'
 import Quora from './Quora.png'
 import Redirect from './redirect.png'
-function article_card({ logo, details }) {
+function article_card({ logo, details,link }) {
     console.log({details})
     return (
         <>
@@ -14,7 +14,7 @@ function article_card({ logo, details }) {
                 <div>
                     <p className='article_details'>{details}</p>
                 </div>
-                <a href='#' className='redirect'>
+                <a href={link} target='./blank' className='redirect'>
                     <img  className='redirect_img' src={Redirect} alt='' />
                 </a>
             </div>
