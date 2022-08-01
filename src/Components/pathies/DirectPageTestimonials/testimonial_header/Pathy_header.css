@@ -26,14 +26,14 @@
 .pathy_header_intro .box{
     display: flex;
     width: 90%;
-    height: fit-content;
+    height: 98vh;
     margin: auto;
     padding: 3% 5%;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     border-radius: 20px;
     /* background-color: rgba(255, 255, 255, 0.479);
     box-shadow: 0px 0px 8px rgba(136, 136, 136, 0.642); */
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .pathy_header_intro .box .left{

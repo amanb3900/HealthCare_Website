@@ -2,8 +2,23 @@ import React from "react";
 import logo from "./images/logo.png";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
+  const activeLink = 'nav-link active';
+  const inactiveLink = 'nav-link';
+  const handleClick = event => {
+    // 👇️ toggle class on click
+    // event.currentTarget.classList.toggle('bg-salmon');
+
+    // 👇️ add class on click
+    event.currentTarget.classList.add('active');
+
+    // 👇️ remove class on click
+    // event.currentTarget.classList.remove('bg-salmon');
+  };
+  const path=window.location.pathname;
+  console.log(path);
   return (
     <>
       <nav className="navbar navbar-expand-custom">
@@ -17,9 +32,11 @@ function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
+                <NavLink className={({ isActive }) =>
+                               isActive ? activeLink : inactiveLink
+                             } aria-current="page"  to="/">
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
                 <a className="nav-link" aria-current="page" to="#">
@@ -27,14 +44,15 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Diseases
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link className="dropdown-item" to="/disease/migraine">
+                    <NavLink className="dropdown-item" to="/disease/migraine">
                       Migraine
-                    </Link>
+                    </NavLink>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
@@ -74,9 +92,9 @@ function Navbar() {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/clinics">
+                <NavLink className="nav-link" aria-current="page" to="/clinics">
                   Clinics/Hospitals
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
@@ -89,19 +107,19 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/donation">
+                <NavLink className="nav-link" to="/donation">
                   Donation
-                </a>
+                </NavLink>
               </li>
             </ul>
             <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <div className="animated-button">
-                  <Link to = "/login">
+                  <NavLink to = "/login">
                   <button type="button" className="button">
                     Get Started
                   </button>
-                  </Link>
+                  </NavLink>
                   <div className="background"></div>
                 </div>
               </li>

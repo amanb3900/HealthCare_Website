@@ -5,6 +5,7 @@ import {
   Routes as Switch,
   Route
 } from "react-router-dom";
+import ScrollToTop from "./scrollToTop";
 import Faq from "./Components/faq/Faq";
 import Forgot from "./Components/forgot/Forgot";
 import Login from "./Components/Log in/Login";
@@ -22,6 +23,7 @@ import ArticleBooks from "./Components/pathies/BooksArticles/BooksArticlesPageTe
 export default function App() {
   return (
     <Router>
+      <ScrollToTop/>
 
       <Switch>
         <Route path="/" element={<Home />}/>
