@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import ScrollToTop from "./scrollToTop";
 import Faq from "./Components/faq/Faq";
+import Newsletter from "./Components/newsletter/Newsletter";
 import Forgot from "./Components/forgot/Forgot";
 import Login from "./Components/Log in/Login";
 import Home from "./Components/Home/Home";
@@ -20,6 +21,7 @@ import Clinic from "./Components/clinic/Clinic";
 import Start from "./Components/Get_Started/Start";
 import Feedback from "./Components/Feedback/FeedbackPage";
 import ArticleBooks from "./Components/pathies/BooksArticles/BooksArticlesPageTestimonials"
+
 export default function App() {
   return (
     <Router>
@@ -40,6 +42,8 @@ export default function App() {
         <Route path="/feedback" element={<Feedback />}/>
         <Route path="/start" element={<Start/>}/>
         <Route path="/faq" element={<Faq/>}/>
+        <Route path="/newsletter" element={<Newsletter/>}/>
+       
             
 
       </Switch>
