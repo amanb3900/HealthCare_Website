@@ -26,22 +26,7 @@ function Header() {
                 <div className="background">
                     <img src={image1} alt="image1" />
                 </div>
-                <div className="box box1">
-                    <img src={image2} alt="image2" />
-                    <p className='floatCardText'>Patients<br/>52</p>
-                </div>
-                <div className="box box2">
-                    <img src={image3} alt="image3" />
-                    <p className='floatCardText'>Articles Published</p>
-                </div>
-                <div className="box box3">
-                    <img src={image4} alt="image4" />
-                    <p className='floatCardText'>Visits<br/>1234</p>
-                </div>
-                <div className="box box4">
-                    <img src={image5} alt="image5" />
-                    <p className='floatCardText'>15</p>
-                </div>
+                
             </div>
         </div>
         
